@@ -63,7 +63,11 @@ export class UserService {
     }
 
     if (data.lastName) {
-      user.firstName = data.firstName;
+      user.lastName = data.lastName;
+    }
+
+    if (data.email) {
+      user.email = data.email;
     }
 
     if (data.password) {
